@@ -1,0 +1,32 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  &.dark {
+    .section-title__text {
+      color: var(--black, #141414);
+    }
+  }
+  
+  &__text {
+    max-width: 670px;
+    color: var(--white, #FFF);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    span {
+      color: var(--green);
+    }
+    @media (max-width: 1200px) {
+      max-width: 565px;
+      font-size: 32px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 28px;
+    }
+  }
+}

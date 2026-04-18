@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link href="css/normalize.min.css?_v=20260327085950" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css?_v=20260327085950" rel="stylesheet">
+  <link href="css/style.css?_v=20260327085950" rel="stylesheet">
+
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.remove('loading');
+      document.getElementById('preloader').style.display = 'none';
+    });
+  </script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=93db7d8d-d126-4f79-9f10-621804bddd7f&lang=ru_RU&_v=20260327085950"></script>
+  
+  <script src="js/jquery-3.7.1.min.js?_v=20260327085950" defer></script>
+  <script src="js/jquery.validate.min.js?_v=20260327085950" defer></script>
+  <script src="js/jquery.inputmask.min.js?_v=20260327085950" defer></script>
+  <script src="js/swiper-bundle.min.js?_v=20260327085950" defer></script>
+  <script src="js/fslightbox.js?_v=20260327085950" defer></script>
+  <script type="module" src="js/main.js?_v=20260327085950"></script>
+</head>
+
+<body>
+  <div id="preloader">
+  <div class="loader"></div>
+</div>
+  <header class="header">
+  <div class="container">
+    <div class="header__line">
+      <div class="header__box-logo">
+        <a href="/" class="logo">
+  <img src="img/logo/logo.svg" alt="logo">
+</a>
+      </div>
+      <div class="header__box-nav js-menu">
+        <button class="header__nav-close btn-reset js-close">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Компания</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Руководство</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Лицензии и акредитации</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">РИД</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Отраслевые стандарты</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского ПО</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Партнеры</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Антикоррупционная политика</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Разработки</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">sgsg sef</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">123</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Отраслевые</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Дизайн-центр</span>
+              </a>
+            </li>
+
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Технологии</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">sgsg sef</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Карьера</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Пресс-центр</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__box-group">
+        <a href="tel:+7 (812) 448-56-98" class="link-phone">
+          <span class="svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <use xlink:href="img/sprite.svg#linkPhone"></use>
+            </svg>
+          </span>
+          <span class="text">
+            +7 (812) 448-56-98
+          </span>
+        </a>
+
+        <button class="burger btn-reset js-burger">
+          <span class="text">Меню</span>
+          <span class="svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <use xlink:href="img/sprite.svg#burger"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero">
+  <div class="background-hero">
+    <picture><source srcset="img/hero/bg.webp" type="image/webp"><img src="img/hero/bg.jpg" alt="img"></picture>
+  </div>
+  <div class="container">
+    <div class="hero__box-info">
+      <h1 class="hero__title">НЭК.ТЕХ</h1>
+      <p class="desc">
+        Единый научно-технический центр Группы «НЭК»<br> Ведущий разработчик в сфере IoT, энергетики<br> и изделий электронной компонентной базы
+      </p>
+    </div>
+  </div>
+</section>
+    <section class="about">
+  <div class="container">
+    <div class="about__content">
+      <div class="about__left">
+        <div class="about__top">
+          <div class="section-title">
+            <h2 class="section-title__text">О компании</h2>
+          </div>
+          <div class="static-text">
+            <p>Единый научно-технический центр «НЭК.ТЕХ» – технологическая IT-компания, осуществляет
+              научно-исследовательскую, опытно-конструкторскую деятельность, разработку электронной компонентной базы,
+              электронной продукции, телекоммуникационных систем, защищённых с использованием криптографических средств
+              защиты информации, а также отраслевых технических регламентов и нормативной документации.</p>
+          </div>
+        </div>
+        <div class="about__bottom">
+          <a href="#" download="#" class="link-dark">
+            <span class="text">Презентация компании</span>
+            <span class="svg">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <use xlink:href="img/sprite.svg#download"></use>
+              </svg>
+            </span>
+          </a>
+
+          <a href="#" class="link-dark">
+            <span class="text">Читать полностью</span>
+          </a>
+        </div>
+      </div>
+      <div class="about__right box-counter">
+        <ul class="box-counter__list list-reset">
+          <li>
+            <div class="card-counter more">
+              <div class="counter">
+                <p class="counter__number hide">50<span></span></p>
+                <p class="counter__number number">0<span></span></p>
+                <span class="counter__desc">НИОКР<br>проектов</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-counter">
+              <div class="counter">
+                <p class="counter__number hide">55<span></span></p>
+                <p class="counter__number number">0<span></span></p>
+                <span class="counter__desc">ИТ-решений<br>в Реестре Минцифры</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-counter more">
+              <div class="counter">
+                <p class="counter__number hide">200<span></span></p>
+                <p class="counter__number number">0<span></span></p>
+                <span class="counter__desc">Результаты<br>интеллектуальной<br>деятельности (РИД)</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-counter">
+              <div class="counter">
+                <p class="counter__number hide">5<span>городов</span></p>
+                <p class="counter__number number">0<span>городов</span></p>
+                <span class="counter__desc">Присутствия<br>компании</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="dev">
+  <div class="container">
+    <div class="dev__content">
+      <div class="section-title dark">
+        <h2 class="section-title__text">Наши разработки</h2>
+      </div>
+
+      <div class="dev__box-swiper">
+
+        <div class="swiper-dev swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="card-dev dark">
+                <a href="#" class="card-dev__link">
+                  <span class="text">Программное обеспечение</span>
+                </a>
+                <span class="card-dev__hover">
+                  <span class="text">Подробнее</span>
+                </span>
+                <div class="card-dev__top">
+                  <span class="svg">
+                    <img src="img/card-dev/1.svg" alt="svg">
+                  </span>
+                  <h3 class="card-dev__title">Программное<br>обеспечение</h3>
+                </div>
+                <p class="card-dev__desc">Встроенное программное обеспечение выполняет функции сбора, обработки, передачи и хранения данных о потреблении ресурсов (электроэнергии/воды/газа)</p>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-dev">
+                <a href="#" class="card-dev__link">
+                  <span class="text">Программное обеспечение</span>
+                </a>
+                <span class="card-dev__hover">
+                  <span class="text">Подробнее</span>
+                </span>
+                <div class="card-dev__top">
+                  <span class="svg">
+                    <img src="img/card-dev/2.svg" alt="svg">
+                  </span>
+                  <h3 class="card-dev__title">Дизайн<br>центр</h3>
+                </div>
+                <p class="card-dev__desc">Разработка отечественной электронно-компонентной базы: микроконтроллеров, аналого-цифрового преобразователя (АЦП), датчика магнитного поля, реле и других изделий.</p>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-dev">
+                <a href="#" class="card-dev__link">
+                  <span class="text">Программное обеспечение</span>
+                </a>
+                <span class="card-dev__hover">
+                  <span class="text">Подробнее</span>
+                </span>
+                <div class="card-dev__top">
+                  <span class="svg">
+                    <img src="img/card-dev/3.svg" alt="svg">
+                  </span>
+                  <h3 class="card-dev__title">Средства защиты<br>информации</h3>
+                </div>
+                <p class="card-dev__desc">СКЗИ предназначено для встраивания в коммуникационные устройства в автоматизированных системах управления и системах межмашинного взаимодействия</p>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-dev">
+                <a href="#" class="card-dev__link">
+                  <span class="text">Программное обеспечение</span>
+                </a>
+                <span class="card-dev__hover">
+                  <span class="text">Подробнее</span>
+                </span>
+                <div class="card-dev__top">
+                  <span class="svg">
+                    <img src="img/card-dev/2.svg" alt="svg">
+                  </span>
+                  <h3 class="card-dev__title">Средства защиты<br>информации</h3>
+                </div>
+                <p class="card-dev__desc">СКЗИ предназначено для встраивания в коммуникационные устройства в автоматизированных системах управления и системах межмашинного взаимодействия</p>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="swiper-nav">
+            <div class="swiper-nav__group">
+              <button class="swiper-nav__btn btn-reset --prev">
+                <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
+                  <use xlink:href="img/sprite.svg#swiperBtnPrev"></use>
+                </svg>
+              </button>
+              <button class="swiper-nav__btn btn-reset --next">
+                <svg class="swiperBtnNext" width="34" height="12" viewBox="0 0 34 12" fill="none">
+                  <use xlink:href="img/sprite.svg#swiperBtnNext"></use>
+                </svg>
+                <svg class="swiperBtnNextMin" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                  <use xlink:href="img/sprite.svg#swiperBtnNextMin"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a href="#" class="link-light">
+              <span class="text">
+                Все разработки
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="rely">
+  <div class="container">
+    <div class="rely__content">
+      <div class="section-title dark">
+        <h2 class="section-title__text"><span>Нам доверяют</span> крупнейшие российские компании энергетического сектора</h2>
+      </div>
+
+      <div class="rely__box-swiper">
+        <div class="swiper-rely swiper-container">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <article class="card-rely">
+                <a href="#" class="card-rely__shell">
+                  <picture><source srcset="img/card-rely/1.webp" type="image/webp"><img src="img/card-rely/1.png" alt="img"></picture>
+                </a>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-rely">
+                <span class="card-rely__shell">
+                  <picture><source srcset="img/card-rely/2.webp" type="image/webp"><img src="img/card-rely/2.png" alt="img"></picture>
+                </span>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-rely">
+                <span class="card-rely__shell">
+                  <picture><source srcset="img/card-rely/3.webp" type="image/webp"><img src="img/card-rely/3.png" alt="img"></picture>
+                </span>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-rely">
+                <span class="card-rely__shell">
+                  <picture><source srcset="img/card-rely/4.webp" type="image/webp"><img src="img/card-rely/4.png" alt="img"></picture>
+                </span>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-rely">
+                <span class="card-rely__shell">
+                  <picture><source srcset="img/card-rely/5.webp" type="image/webp"><img src="img/card-rely/5.png" alt="img"></picture>
+                </span>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-rely">
+                <span class="card-rely__shell">
+                  <picture><source srcset="img/card-rely/6.webp" type="image/webp"><img src="img/card-rely/6.png" alt="img"></picture>
+                </span>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="news mt-148">
+  <div class="container">
+    <div class="news__content">
+      <div class="section-title">
+        <h2 class="section-title__text">Новости</h2>
+      </div>
+
+      <div class="news__box-swiper">
+
+        <div class="swiper-news swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="card-news">
+                <a href="#" class="card-news__link">
+                  <span class="text">Прикладное ПО «HMISKO» от «НЭК.ТЕХ» внесено в реестр Минцифры</span>
+                </a>
+                <span class="card-news__hover"></span>
+                <div class="card-news__top">
+                  <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                  <picture><source srcset="img/card-news/1.webp" type="image/webp"><img src="img/card-news/1.jpg" alt="img"></picture>
+                </div>
+                <h3 class="card-news__title">Прикладное ПО «HMISKO» от «НЭК.ТЕХ» внесено в реестр Минцифры</h3>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-news">
+                <a href="#" class="card-news__link">
+                  <span class="text">Группа «НЭК» переходит на единый бренд</span>
+                </a>
+                <span class="card-news__hover"></span>
+                <div class="card-news__top">
+                  <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                  <picture><source srcset="img/card-news/2.webp" type="image/webp"><img src="img/card-news/2.jpg" alt="img"></picture>
+                </div>
+                <h3 class="card-news__title">Группа «НЭК» переходит на единый бренд</h3>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-news">
+                <a href="#" class="card-news__link">
+                  <span class="text">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</span>
+                </a>
+                <span class="card-news__hover"></span>
+                <div class="card-news__top">
+                  <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                  <picture><source srcset="img/card-news/3.webp" type="image/webp"><img src="img/card-news/3.jpg" alt="img"></picture>
+                </div>
+                <h3 class="card-news__title">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</h3>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="card-news">
+                <a href="#" class="card-news__link">
+                  <span class="text">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</span>
+                </a>
+                <span class="card-news__hover"></span>
+                <div class="card-news__top">
+                  <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                  <picture><source srcset="img/card-news/3.webp" type="image/webp"><img src="img/card-news/3.jpg" alt="img"></picture>
+                </div>
+                <h3 class="card-news__title">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента» «НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</h3>
+              </article>
+            </div>
+
+          </div>
+          <div class="swiper-nav">
+            <div class="swiper-nav__group">
+              <button class="swiper-nav__btn btn-reset --prev">
+                <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
+                  <use xlink:href="img/sprite.svg#swiperBtnPrev"></use>
+                </svg>
+              </button>
+              <button class="swiper-nav__btn btn-reset --next">
+                <svg class="swiperBtnNext" width="34" height="12" viewBox="0 0 34 12" fill="none">
+                  <use xlink:href="img/sprite.svg#swiperBtnNext"></use>
+                </svg>
+                <svg class="swiperBtnNextMin" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                  <use xlink:href="img/sprite.svg#swiperBtnNextMin"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a href="#" class="link-light">
+              <span class="text">
+                Все разработки
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer mt-148">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__top">
+        <a href="/" class="logo-footer">
+  <img src="img/logo/logo-footer.svg" alt="logo">
+</a>
+        <ul class="footer__nav list-reset">
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">О компании</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Разработки</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Дизайн-центр</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Технологии</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Карьера</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Пресс-центр</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div class="contacts-line">
+          <div class="box-info">
+            <span class="name">Адрес:</span>
+            <span class="text">г. Санкт-Петербург, ул. Шателена, д. 26, лит. А</span>
+          </div>
+          <div class="box-info">
+            <span class="name">Телефон:</span>
+            <a href="tel:+7 (812) 448-56-98" class="phone">+7 (812) 448-56-98</a>
+          </div>
+          <div class="box-info">
+            <span class="name">Эл. адрес:</span>
+            <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+          </div>
+        </div>
+        <div class="network-line">
+          <span class="name">Мы в соц. сетях</span>
+          <ul class="network-list list-reset">
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Телеграм НЭК.ТЕХ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Телеграм НЭК</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Дзен</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Хабр</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ending-line">
+          <div class="ending-line__group">
+            <p><span>© 2026</span>Все права защищены</p>
+            <a href="#">Политика обработки персональных данных</a>
+          </div>
+          <a class="link-x2" href="https://x2digital.ru/">
+            <span class="text">Разработка сайта</span>
+            <img src="img/x2/x2.svg" alt="x2">
+          </a>
+        </div>
+      </div>
+      <div class="footer-bg"></div>
+    </div>
+    <span class="cue">
+      Энергия<br>
+      общей<br>
+      цели<br>
+    </span>
+  </div>
+</footer>
+  <div class="cookie">
+  <div class="container cookie__container">
+    <div class="cookie__window">
+      <div class="cookie__message">
+        <p class="desc">
+          Оставаясь на сайте вы соглашаетесь с <a href="#">Политикой обработки персональных</a> данных и с использованием cookie.
+        </p>
+      </div>
+      <div class="cookie__box-btn">
+        <button class="cookie__btn btn-reset">
+          <span class="text">Понятно</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--main-white, #FFF);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (max-width: 1200px) {
+    max-width: 250px;
+  }
+
+  .name {
+    color: var(--gray-200, #646464);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  a {
+    transition: color 0.4s ease-in-out;
+    @media (min-width: 1001px) {
+      &:focus-visible,
+      &:hover {
+        color: var(--green, #00CB62);
+      }
+    }
+  }
+}

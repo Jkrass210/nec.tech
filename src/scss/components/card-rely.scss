@@ -1,0 +1,31 @@
+.card-rely {
+  width: auto;
+  min-height: 84px;
+  max-height: 84px;
+  display: flex;
+  align-items: center;
+  &__shell {
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-height: 75px;
+      filter: grayscale(100%);
+      transition: filter 0.4s ease-in-out;
+      @media (max-width: 1200px) {
+        max-height: 62px;
+      }
+      @media (max-width: 1000px) {
+        max-height: 50px;
+      }
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        img {
+          filter: none;
+        }
+      }
+    }
+  }
+}

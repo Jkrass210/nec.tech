@@ -1,0 +1,46 @@
+.burger {
+  display: none;
+  gap: 4px;
+  align-items: center;
+  padding: 5px 16px;
+  height: 40px;
+  border-radius: 14px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--gray-500, #232323);
+  color: var(--white, #FFF);
+
+  .svg {
+    display: flex;
+  }
+
+  @media (max-width: 1400px) {
+    display: flex;
+  }
+
+  @media (max-width: 1000px) {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--gray-500, #232323);
+
+    .svg {
+      color: var(--green);
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .text {
+      display: none;
+    }
+  }
+}

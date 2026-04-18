@@ -1,0 +1,9 @@
+.network-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 19px;
+  }
+}

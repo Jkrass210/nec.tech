@@ -1,0 +1,15 @@
+.news {
+  overflow: hidden;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @media (max-width: 1000px) {
+      gap: 20px;
+    }
+  }
+  .link-light {
+    color: var(--white, #FFF);
+    background-color: var(--gray-500, #232323);
+  }
+}

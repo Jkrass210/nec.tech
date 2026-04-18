@@ -1,0 +1,52 @@
+.dev {
+  position: relative;
+  overflow: hidden;
+  padding-top: 68px;
+  background-color: var(--gray-50, #F5F5F5);
+
+  @media (max-width: 1200px) {
+    padding-top: 64px;
+  }
+
+  @media (max-width: 1000px) {
+    padding-top: 56px;
+  }
+
+  .container {
+    position: relative;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: calc((100vw - 100%) / 2);
+      background-color: var(--gray-50, #F5F5F5);
+      /* цвет фона страницы */
+      z-index: 2;
+      @media (max-width: 1400px) {
+        display: none;
+      }
+    }
+
+    &::before {
+      left: calc((-1 * ((100vw - 100%) / 2)) + 1px);
+    }
+
+    &::after {
+      right: calc((-1 * ((100vw - 100%) / 2)) + 1px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @media (max-width: 1200px) {
+      gap: 28px;
+    }
+    @media (max-width: 1000px) {
+      gap: 20px;
+    }
+  }
+}

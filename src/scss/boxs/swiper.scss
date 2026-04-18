@@ -1,0 +1,85 @@
+.swiper {
+  &-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media (max-width: 1000px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    &__group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    &__btn {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--black, #141414);
+      flex-shrink: 0;
+      border-radius: 16px;
+      background-color: var(--white, #FFF);
+      transition: opacity 0.4s ease-in-out;
+      &.swiper-button-disabled {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+      @media (max-width: 1200px) {
+        width: 52px;
+        height: 52px;
+      }
+      .swiperBtnNext {
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+      .swiperBtnNextMin {
+        display: none;
+        @media (max-width: 1000px) {
+          display: inline-block;
+        }
+      }
+      &.--next {
+        width: 91px;
+        @media (max-width: 1000px) {
+          width: 52px;
+        }
+        
+      }
+      @media (min-width: 1001px) {
+        &:focus-visible,&:hover {
+          background-color: var(--green);
+          color: var(--white, #FFF);
+        }
+      }
+    }
+  }
+  &-rely {
+    .swiper-slide {
+      width: auto;
+    }
+  }
+  &-news {
+    overflow: hidden;
+    margin: -12px -12px 0 -12px;
+    padding: 12px 12px 0 12px;
+    @media (max-width: 1200px) {
+      overflow: visible;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-nav {
+      &__btn {
+        color: var(--white);
+        background-color: var(--gray-500, #232323);
+      }
+    }
+  }
+}
