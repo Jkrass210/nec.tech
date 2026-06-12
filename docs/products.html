@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукция</title>
+  <link href="css/normalize.min.css?_v=20260612144946" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css?_v=20260612144946" rel="stylesheet">
+  <link href="css/style.css?_v=20260612144946" rel="stylesheet">
+
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.remove('loading');
+      document.getElementById('preloader').style.display = 'none';
+    });
+  </script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=93db7d8d-d126-4f79-9f10-621804bddd7f&lang=ru_RU&_v=20260612144946"></script>
+  
+  <script src="js/jquery-3.7.1.min.js?_v=20260612144946" defer></script>
+  <script src="js/jquery.validate.min.js?_v=20260612144946" defer></script>
+  <script src="js/jquery.inputmask.min.js?_v=20260612144946" defer></script>
+  <script src="js/swiper-bundle.min.js?_v=20260612144946" defer></script>
+  <script src="js/fslightbox.js?_v=20260612144946" defer></script>
+  <script type="module" src="js/main.js?_v=20260612144946"></script>
+</head>
+
+
+<body>
+  <div id="preloader">
+  <div class="loader"></div>
+</div>
+  <header class="header">
+  <div class="container">
+    <div class="header__line">
+      <div class="header__box-logo">
+        <a href="/" class="logo">
+  <img src="img/logo/logo.svg" alt="logo">
+</a>
+      </div>
+      <div class="header__box-nav js-menu">
+        <button class="header__nav-close btn-reset js-close">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Компания</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Руководство</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Лицензии и акредитации</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">РИД</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Отраслевые стандарты</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского ПО</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Партнеры</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Антикоррупционная политика</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Разработки</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">sgsg sef</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">123</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Отраслевые</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Дизайн-центр</span>
+              </a>
+            </li>
+
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Технологии</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">sgsg sef</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Карьера</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Пресс-центр</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__box-group">
+        <a href="tel:+7 (812) 448-56-98" class="link-phone">
+          <span class="svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <use xlink:href="img/sprite.svg#linkPhone"></use>
+            </svg>
+          </span>
+          <span class="text">
+            +7 (812) 448-56-98
+          </span>
+        </a>
+
+        <button class="burger btn-reset js-burger">
+          <span class="text">Меню</span>
+          <span class="svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <use xlink:href="img/sprite.svg#burger"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <div class="bx-breadcrumb">
+      <div class="container">
+        <div class="bx-breadcrumb__list">
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Главная страница</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Решения</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <span>Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)</span>
+          </div>
+        </div>
+        <div class="bx-breadcrumb-back">
+          <a href="#" class="bx-breadcrumb-back__link">
+            <span class="svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite.svg#breadBack"></use>
+              </svg>
+            </span>
+            <span class="text">
+              Вернуться назад
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="products white-radius">
+      <div class="container">
+        <div class="products__content">
+          <div class="products__left">
+            <div class="page-title">
+              <div class="page-title__line">
+                <h1 class="page-title__text">
+                  Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)
+                </h1>
+              </div>
+            </div>
+            <div class="products__info">
+              <div class="static-text">
+                <p>Микроконтроллер основан на 32-битном ядре RISC–V (тип N308), с максимальной рабочей частотой 144 МГц, поддерживает операции с плавающей точкой и DSP-инструкции. Включает в себя 512 КБ флэш-памяти, 144 КБ ОЗУ, 4 АЦП (12 бит с частотой 5 МВыб/сёк), 4 операционных усилителя, 7 компараторов, 2 ЦАП (12 бит с частотой 1 МВыб/сёк), 24-канальный блок контроля ёмкостных сенсоров, поддерживает интерфейсы UART (в т.ч. синхронный), I2C, SPI, QSPI, CAN.</p>
+              </div>
+              <div class="static-text">
+                <h4>Особенности</h4>
+                <ul>
+                  <li>32-битное ядро RISC-V (тип N308)</li>
+                  <li>Максимальная рабочая частота 144 МГц</li>
+                  <li>Операции с плавающей точкой</li>
+                  <li>DSP-инструкции</li>
+                  <li>512 КБ флэш-памяти</li>
+                  <li>144 КБ ОЗУ</li>
+                  <li>4 АЦП (12 бит с частотой 5 МВыб/сёк)</li>
+                  <li>4 операционных усилителя</li>
+                  <li>7 компараторов</li>
+                  <li>2 ЦАП (12 бит с частотой 1 МВыб/сёк)</li>
+                  <li>UART, I2C, SPI, QSPI, CAN</li>
+                </ul>
+              </div>
+              <div class="custom-label">
+                <span class="custom-label__box-img">
+                  <img src="img/custom-label/1.svg" alt="img">
+                </span>
+                <p class="custom-label__text">
+                  Микроконтроллер внесён в Реестр отечественной промышленной продукции: №10369229 от 19.12.2025 (<a href="#">страница ГИСП</a>)
+                </p>
+              </div>
+              <div class="hidden-info js-hidden-info">
+                <div class="hidden-info__content js-hidden-info-content">
+                  <div class="static-text">
+                    <h4>Полное описание</h4>
+                    <p>Микроконтроллер, который мы рассматриваем, построен на основе 32-битного ядра архитектуры RISC–V, известного под обозначением N308. Он способен работать на максимальной частоте 144 МГц и поддерживает широкий спектр операций, включая вычисления с плавающей точкой и инструкции для цифровой обработки сигналов (DSP). В его состав входит 512 КБ флэш-памяти, что обеспечивает достаточно места для хранения программ и данных, а также 144 КБ оперативной памяти (ОЗУ), что позволяет эффективно управлять многозадачностью. Кроме того, микроконтроллер оснащён четырьмя аналогово-цифровыми преобразователями (АЦП) с разрешением 12 бит и частотой 5 МВыб/сек, что делает его идеальным для работы с высококачественными аналоговыми сигналами.</p>
+                    <p>В дополнение к этому, он включает в себя четыре операционных усилителя и семь компараторов, что значительно расширяет его функциональные возможности. Также имеются два цифровых-аналога преобразователя (ЦАП) с разрешением 12 бит и частотой 1 МВыб/сек, что позволяет точно воспроизводить аналоговые сигналы. Микроконтроллер поддерживает 24-канальный блок контроля ёмкостных сенсоров, что делает его подходящим для различных приложений в области сенсорных технологий. Он также предлагает множество интерфейсов для связи, включая UART (в том числе синхронный режим), I2C, SPI, QSPI и CAN, что обеспечивает гибкость в подключении к другим устройствам и системам. </p>
+                  </div>
+                  <div class="static-text">
+                    <h4>Технологии</h4>
+                    <ul>
+                      <li>
+                        32-битное ядро RISC-V (тип N308)
+                      </li>
+                      <li>
+                        Максимальная рабочая частота 144 МГц
+                      </li>
+                      <li>
+                        Операции с плавающей точкой
+                      </li>
+                      <li>
+                        DSP-инструкции
+                      </li>
+                      <li>
+                        512 КБ флэш-памяти
+                      </li>
+                      <li>
+                        144 КБ ОЗУ
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="static-text">
+                    <h4>Дополнительно</h4>
+                    <p><a href="#">Комплект разработчика микроконтроллера</a><br> Среда разработки Nuclei Studio (рекомендованная версия 2022.12). Предоставляется SDK (актуальная версия 1.3.02, доступ по запросу, требуется заключение NDA).</p>
+                    <p>Ведутся поставки.</p>
+                    <p>Информация для заказа: 32-разрядный микроконтроллер К1986ВУ024 АДКБ.431290.460ТУ.</p>
+                  </div>
+                </div>
+
+                <button class="btn-read-completely btn-reset js-hidden-info-btn">
+                  <span class="text">
+                    Читать полностью
+                  </span>
+                  <span class="text-active">
+                    Скрыть описание
+                  </span>
+                  <span class="svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M15 10H10M10 10H5M10 10V5M10 10V15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div class="consultation-label mt-148">
+              <p class="consultation-label__desc">Нужна консультация по поставкам и применению ЭКБ?</p>
+              <button class="btn-consultation btn-reset">
+                <span class="text">
+                  Связаться с нами
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="products__right">
+            <div class="page-title">
+              <div class="page-title__line">
+                <h1 class="page-title__text">
+                  Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)
+                </h1>
+              </div>
+            </div>
+            <div class="products__right-content">
+              <div class="products__box-img">
+                <picture><source srcset="img/products/1.webp" type="image/webp"><img src="img/products/1.png" alt="img"></picture>
+              </div>
+              <ul class="products__link-list list-reset">
+                <li>
+                  <a href="#" download="#" class="link-download-product-info">
+                    <span class="svg">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <use xlink:href="img/sprite.svg#downloadProduct"></use>
+                      </svg>
+                    </span>
+                    <span class="text-wrapper">
+                      <span class="text">Руководство по эксплуатации</span>
+                      <span class="size">(PDF 2,4 Мб)</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download="#" class="link-download-product-info">
+                    <span class="svg">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <use xlink:href="img/sprite.svg#downloadProduct"></use>
+                      </svg>
+                    </span>
+                    <span class="text-wrapper">
+                      <span class="text">Габаритный чертёж</span>
+                      <span class="size">(PDF 1,2 Мб)</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download="#" class="link-download-product-info">
+                    <span class="svg">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <use xlink:href="img/sprite.svg#downloadProduct"></use>
+                      </svg>
+                    </span>
+                    <span class="text-wrapper">
+                      <span class="text">К1986ВУ024 Описание</span>
+                      <span class="size">(PDF 0,32 Мб)</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download="#" class="link-download-product-info">
+                    <span class="svg">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <use xlink:href="img/sprite.svg#downloadProduct"></use>
+                      </svg>
+                    </span>
+                    <span class="text-wrapper">
+                      <span class="text">К1986ВУ024 Этикетка</span>
+                      <span class="size">(PDF 4,16 Мб)</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download="#" class="link-download-product-info">
+                    <span class="svg">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <use xlink:href="img/sprite.svg#downloadProduct"></use>
+                      </svg>
+                    </span>
+                    <span class="text-wrapper">
+                      <span class="text">NRTS32M-AN-1</span>
+                      <span class="size">(PDF 2,21 Мб)</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download="#" class="link-download-product-info">
+                    <span class="svg">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <use xlink:href="img/sprite.svg#downloadProduct"></use>
+                      </svg>
+                    </span>
+                    <span class="text-wrapper">
+                      <span class="text">NRTS32M-AN</span>
+                      <span class="size">(PDF 2,14 Мб)</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="similar-solutions white">
+      <div class="container">
+        <div class="section-title dark">
+          <h2 class="section-title__text">
+            Похожие решения
+          </h2>
+        </div>
+
+        <div class="similar-solutions__box-swiper">
+          <div class="swiper-similar-solutions swiper-container load">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card-implemented">
+                  <h3 class="title">Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)</h3>
+                  <a href="#" class="card-implemented__link">
+                    <span class="card-implemented__hover"></span>
+                    <span class="card-implemented__box-img">
+                      <picture><source srcset="img/card-implemented/1.webp" type="image/webp"><img src="img/card-implemented/1.jpg" alt="img"></picture>
+                    </span>
+                    <span class="card-implemented__wrapper-info">
+                      <span class="card-implemented__title">
+                        Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)
+                      </span>
+                      <span class="card-implemented__desc">
+                        32-разрядный микроконтроллер на архитектуре RISC–V. Микроконтроллер внесён в Реестр
+                        отечественной промышленной продукции: № 10369229 от 19.12.2025 г.
+                      </span>
+                    </span>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-implemented">
+                  <h3 class="title">Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)</h3>
+                  <a href="#" class="card-implemented__link">
+                    <span class="card-implemented__hover"></span>
+                    <span class="card-implemented__box-img">
+                      <picture><source srcset="img/card-implemented/1.webp" type="image/webp"><img src="img/card-implemented/1.jpg" alt="img"></picture>
+                    </span>
+                    <span class="card-implemented__wrapper-info">
+                      <span class="card-implemented__title">
+                        Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)
+                      </span>
+                      <span class="card-implemented__desc">
+                        32-разрядный микроконтроллер на архитектуре RISC–V. Микроконтроллер внесён в Реестр
+                        отечественной промышленной продукции: № 10369229 от 19.12.2025 г.
+                      </span>
+                    </span>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-implemented">
+                  <h3 class="title">Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)</h3>
+                  <a href="#" class="card-implemented__link">
+                    <span class="card-implemented__hover"></span>
+                    <span class="card-implemented__box-img">
+                      <picture><source srcset="img/card-implemented/1.webp" type="image/webp"><img src="img/card-implemented/1.jpg" alt="img"></picture>
+                    </span>
+                    <span class="card-implemented__wrapper-info">
+                      <span class="card-implemented__title">
+                        Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)
+                      </span>
+                      <span class="card-implemented__desc">
+                        32-разрядный микроконтроллер на архитектуре RISC–V. Микроконтроллер внесён в Реестр
+                        отечественной промышленной продукции: № 10369229 от 19.12.2025 г.
+                      </span>
+                    </span>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-implemented">
+                  <h3 class="title">Устройство расширения памяти</h3>
+                  <a href="#" class="card-implemented__link">
+                    <span class="card-implemented__hover"></span>
+                    <span class="card-implemented__box-img">
+                      <picture><source srcset="img/card-implemented/4.webp" type="image/webp"><img src="img/card-implemented/4.jpg" alt="img"></picture>
+                    </span>
+                    <span class="card-implemented__wrapper-info">
+                      <span class="card-implemented__title">
+                        Устройство расширения памяти
+                      </span>
+                      <span class="card-implemented__desc">
+                        Предназначено для практической оценки работы контроллера управления внешней памятью микроконтроллера К1986ВУ024 (NRTS32M).
+                      </span>
+                    </span>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card-implemented">
+                  <h3 class="title">Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)</h3>
+                  <a href="#" class="card-implemented__link">
+                    <span class="card-implemented__hover"></span>
+                    <span class="card-implemented__box-img">
+                      <picture><source srcset="img/card-implemented/1.webp" type="image/webp"><img src="img/card-implemented/1.jpg" alt="img"></picture>
+                    </span>
+                    <span class="card-implemented__wrapper-info">
+                      <span class="card-implemented__title">
+                        Микроконтроллер RISC-V К1986ВУ024 (NRTS32M)
+                      </span>
+                      <span class="card-implemented__desc">
+                        32-разрядный микроконтроллер на архитектуре RISC–V. Микроконтроллер внесён в Реестр
+                        отечественной промышленной продукции: № 10369229 от 19.12.2025 г.
+                      </span>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-nav">
+              <div class="swiper-nav__group">
+                <button class="swiper-nav__btn btn-reset --prev">
+                  <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
+                    <use xlink:href="img/sprite.svg#swiperBtnPrev"></use>
+                  </svg>
+                </button>
+                <button class="swiper-nav__btn btn-reset --next">
+                  <svg class="swiperBtnNext" width="34" height="12" viewBox="0 0 34 12" fill="none">
+                    <use xlink:href="img/sprite.svg#swiperBtnNext"></use>
+                  </svg>
+                  <svg class="swiperBtnNextMin" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                    <use xlink:href="img/sprite.svg#swiperBtnNextMin"></use>
+                  </svg>
+                </button>
+              </div>
+  
+              <!-- <a href="#" class="link-light">
+                <span class="text">
+                  Все разработки
+                </span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+  <footer class="footer mt-148">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__top">
+        <a href="/" class="logo-footer">
+  <img src="img/logo/logo-footer.svg" alt="logo">
+</a>
+        <ul class="footer__nav list-reset">
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">О компании</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Разработки</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Дизайн-центр</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Технологии</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Карьера</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Пресс-центр</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div class="contacts-line">
+          <div class="box-info">
+            <span class="name">Адрес:</span>
+            <span class="text">г. Санкт-Петербург, ул. Шателена, д. 26, лит. А</span>
+          </div>
+          <div class="box-info">
+            <span class="name">Телефон:</span>
+            <a href="tel:+7 (812) 448-56-98" class="phone">+7 (812) 448-56-98</a>
+          </div>
+          <div class="box-info">
+            <span class="name">Эл. адрес:</span>
+            <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+          </div>
+        </div>
+        <div class="network-line">
+          <span class="name">Мы в соц. сетях</span>
+          <ul class="network-list list-reset">
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Телеграм НЭК.ТЕХ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Телеграм НЭК</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Дзен</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Хабр</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ending-line">
+          <div class="ending-line__group">
+            <p><span>© 2026</span>Все права защищены</p>
+            <a href="#">Политика обработки персональных данных</a>
+          </div>
+          <a class="link-x2" href="https://x2digital.ru/">
+            <span class="text">Разработка сайта</span>
+            <img src="img/x2/x2.svg" alt="x2">
+          </a>
+        </div>
+      </div>
+      <div class="footer-bg"></div>
+    </div>
+    <span class="cue">
+      Энергия<br>
+      общей<br>
+      цели<br>
+    </span>
+  </div>
+</footer>
+
+<div class="modal" id="viewer-video">
+  <div class="modal__body">
+    <button class="viewer-video__close modal__close btn-reset js-close-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M0.601562 0.599976L12.2682 12.2666M0.601562 12.2666L12.2682 0.599976" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="viewer-video__window js-box-video-iframe">
+      <iframe src="" width="100%" height="100%" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="success-message">
+  <div class="modal__body">
+    <button class="success-message__close modal__close btn-reset js-close-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M0.601562 0.599976L12.2682 12.2666M0.601562 12.2666L12.2682 0.599976" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="success-message__window">
+      <h3 class="success-message__title">
+        Спасибо за ваше сообщение!
+      </h3>
+      <p class="success-message__text">
+        Мы получили ваше сообщение и свяжемся с вами в ближайшее время.
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="cookie">
+  <div class="container cookie__container">
+    <div class="cookie__window">
+      <div class="cookie__message">
+        <p class="desc">
+          Оставаясь на сайте вы соглашаетесь с <a href="#">Политикой обработки персональных</a> данных и с использованием cookie.
+        </p>
+      </div>
+      <div class="cookie__box-btn">
+        <button class="cookie__btn btn-reset">
+          <span class="text">Понятно</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

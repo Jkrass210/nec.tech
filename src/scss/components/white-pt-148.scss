@@ -1,0 +1,12 @@
+.white-pt-148 {
+  padding-top: 178px;
+  padding-bottom: 118px;
+  @media (max-width: 1400px) {
+    padding-top: 150px;
+    padding-bottom: 90px;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 91px;
+    padding-bottom: 90px;
+  }
+}

@@ -1,0 +1,39 @@
+.card-brandbook {
+  padding: 28px;
+  border-radius: 20px;
+  background-color: var(--black, #141414);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  @media (max-width: 1000px) {
+    padding: 16px;
+    gap: 24px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__title {
+    color: var(--white, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__desc {
+    color: var(--gray-400, #908F8F);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 119.444%;
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 15px;
+    }
+  }
+}

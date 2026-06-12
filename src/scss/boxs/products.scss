@@ -1,0 +1,107 @@
+.products {
+  &__content {
+    display: flex;
+    gap: 24px;
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+      gap: 28px;
+    }
+  }
+  &__left {
+    width: calc(904 / 1364 * 100%);
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+    .page-title {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+  &__right {
+    flex: 1;
+    .page-title {
+      display: none;
+      @media (max-width: 1200px) {
+        display: block;
+      }
+    }
+  }
+  .page-title {
+    margin-bottom: 28px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    @media (max-width: 1200px) {
+      gap: 44px;
+    }
+  }
+  &__right-content {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media (max-width: 1200px) {
+      position: static;
+      top: auto;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+    }
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  &__box-img {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 36px;
+    width: 100%;
+    height: 304px;
+    min-height: 304px;
+    max-height: 304px;
+    border-radius: 24px;
+    border: 4px solid var(--black-light, #191919);
+    @media (max-width: 1200px) {
+      width: calc(374 / 976 * 100%);
+      padding: 48px 0;
+    }
+    @media (max-width: 1000px) {
+      width: 450px;
+      max-width: 100%;
+      margin: auto;
+      padding: 30px 0;
+      height: 252px;
+      min-height: 252px;
+      max-height: 252px;
+    }
+    img {
+      pointer-events: none;
+      width: 100%;
+      height: 208px;
+      min-height: 208px;
+      max-height: 208px;
+      object-fit: contain;
+      object-position: center;
+      @media (max-width: 1000px) {
+        height: 184px;
+        min-height: 184px;
+        max-height: 184px;
+      }
+    }
+  }
+  &__link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media (max-width: 1200px) {
+      gap: 20px;
+    }
+  }
+}

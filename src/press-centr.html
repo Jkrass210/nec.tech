@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"Пресс-центр"})
+
+<body>
+  @@include('html/boxs/preloader.html')
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <div class="bx-breadcrumb">
+      <div class="container">
+        <div class="bx-breadcrumb__list">
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Главная страница</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <span>Пресс-центр</span>
+          </div>
+        </div>
+        <div class="bx-breadcrumb-back">
+          <a href="#" class="bx-breadcrumb-back__link">
+            <span class="svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite.svg#breadBack"></use>
+              </svg>
+            </span>
+            <span class="text">
+              Вернуться назад
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-title">
+      <div class="container">
+        <div class="page-title__line">
+          <h1 class="page-title__text">
+            Пресс-центр
+          </h1>
+        </div>
+      </div>
+    </div>
+    @@include('html/boxs/box-media-contacts.html')
+    
+    <section class="news mb-108">
+      <div class="container">
+        <div class="news__content">
+          <div class="section-mini-title">
+            <h2 class="section-mini-title__text">Новости</h2>
+          </div>
+    
+          <div class="news__box-swiper">
+    
+            <div class="swiper-news swiper-container">
+              <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                  <article class="card-news">
+                    <a href="#" class="card-news__link">
+                      <span class="text">Прикладное ПО «HMISKO» от «НЭК.ТЕХ» внесено в реестр Минцифры</span>
+                    </a>
+                    <span class="card-news__hover"></span>
+                    <div class="card-news__top">
+                      <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                      <img src="img/card-news/1.jpg" alt="img">
+                    </div>
+                    <h3 class="card-news__title">Прикладное ПО «HMISKO» от «НЭК.ТЕХ» внесено в реестр Минцифры</h3>
+                  </article>
+                </div>
+    
+                <div class="swiper-slide">
+                  <article class="card-news">
+                    <a href="#" class="card-news__link">
+                      <span class="text">Группа «НЭК» переходит на единый бренд</span>
+                    </a>
+                    <span class="card-news__hover"></span>
+                    <div class="card-news__top">
+                      <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                      <img src="img/card-news/2.jpg" alt="img">
+                    </div>
+                    <h3 class="card-news__title">Группа «НЭК» переходит на единый бренд</h3>
+                  </article>
+                </div>
+    
+                <div class="swiper-slide">
+                  <article class="card-news">
+                    <a href="#" class="card-news__link">
+                      <span class="text">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</span>
+                    </a>
+                    <span class="card-news__hover"></span>
+                    <div class="card-news__top">
+                      <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                      <img src="img/card-news/3.jpg" alt="img">
+                    </div>
+                    <h3 class="card-news__title">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</h3>
+                  </article>
+                </div>
+    
+                <div class="swiper-slide">
+                  <article class="card-news">
+                    <a href="#" class="card-news__link">
+                      <span class="text">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</span>
+                    </a>
+                    <span class="card-news__hover"></span>
+                    <div class="card-news__top">
+                      <span class="time"><time datetime="01 мая 2025">01 мая 2025</time></span>
+                      <img src="img/card-news/3.jpg" alt="img">
+                    </div>
+                    <h3 class="card-news__title">«НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента» «НЭК.ТЕХ» приобрёл Цифровой Испытательный Полигон ЦИТМ «Экспонента»</h3>
+                  </article>
+                </div>
+    
+              </div>
+              <div class="swiper-nav">
+                <div class="swiper-nav__group">
+                  <button class="swiper-nav__btn btn-reset --prev">
+                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
+                      <use xlink:href="img/sprite.svg#swiperBtnPrev"></use>
+                    </svg>
+                  </button>
+                  <button class="swiper-nav__btn btn-reset --next">
+                    <svg class="swiperBtnNext" width="34" height="12" viewBox="0 0 34 12" fill="none">
+                      <use xlink:href="img/sprite.svg#swiperBtnNext"></use>
+                    </svg>
+                    <svg class="swiperBtnNextMin" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                      <use xlink:href="img/sprite.svg#swiperBtnNextMin"></use>
+                    </svg>
+                  </button>
+                </div>
+    
+                <a href="#" class="link-light">
+                  <span class="text">
+                    Все разработки
+                  </span>
+                </a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-gallery mb-108">
+      <div class="container">
+
+        <div class="box-press__line">
+           <div class="section-mini-title">
+            <h2 class="section-mini-title__text">Фотографии</h2>
+          </div>
+
+          <div class="box-press__box-swiper">
+            <div class="swiper-card-3 swiper-container load">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                  <article class="card-photo">
+                    <a href="#" class="card-photo__link">
+                      <span>Презентация новых наработок в решений в офисе компании</span>
+                    </a>
+                    <div class="card-photo__box-img">
+                      <span class="tag">55 фотографий</span>
+                      <img src="img/card-photo/1.jpg" alt="img">
+                    </div>
+                    <h3 class="card-photo__taitle">
+                      Презентация новых наработок в решений в офисе компании
+                    </h3>
+                  </article>
+                </div>
+  
+                <div class="swiper-slide">
+                  <article class="card-photo">
+                    <a href="#" class="card-photo__link">
+                      <span>Установка и настройка новых зарядных станций для электромобилей в городе Санкт-Петербурге
+                      </span>
+                    </a>
+                    <div class="card-photo__box-img">
+                      <span class="tag">55 фотографий</span>
+                      <img src="img/card-photo/2.jpg" alt="img">
+                    </div>
+                    <h3 class="card-photo__taitle">
+                      Установка и настройка новых зарядных станций для электромобилей в городе Санкт-Петербурге
+                    </h3>
+                  </article>
+                </div>
+  
+              </div>
+  
+              <div class="swiper-card-3__line-nav">
+                <div class="swiper-group-btn-type-1">
+                  <button class="swiper-btn-type-1 --prev btn-reset">
+                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+                      <use xlink:href="img/sprite.svg#arrSwiperPrev"></use>
+                    </svg>
+                  </button>
+                  <button class="swiper-btn-type-1 --next btn-reset">
+                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+                      <use xlink:href="img/sprite.svg#arrSwiperNext"></use>
+                    </svg>
+                  </button>
+                </div>
+                <a class="link-light" href="#">
+                  <span class="text">
+                    Показать все
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-gallery mb-108">
+      <div class="container">
+
+        <div class="box-press__line">
+          <div class="section-mini-title">
+            <h2 class="section-mini-title__text">Видео</h2>
+          </div>
+
+          <div class="box-press__box-swiper">
+            <div class="swiper-card-3 swiper-container load">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                  <article class="card-video">
+                    <button class="card-video__btn js-open-modal btn-reset js-open-video-iframe" data-modal="viewer-video" data-iframe-video="https://vkvideo.ru/video_ext.php?oid=-29043952&id=456240132&hash=b218fdd5b550ee82&hd=4">
+                      <span>
+                        Компания НЭК.ТЕХ осуществляет научно-исследовательские и опытно-констуркторские работы, разработку технической документации и программнорго обеспечения
+                      </span>
+                    </button>
+                    <div class="box-video">
+                      <span class="tag">2:29</span>
+                      <span class="play">
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                          <use xlink:href="img/sprite.svg#videoPlay"></use>
+                        </svg>
+                      </span>
+                      <img src="img/card-video/1.jpg" alt="img">
+                    </div>
+                    <h3 class="card-video__title">
+                      Компания НЭК.ТЕХ осуществляет научно-исследовательские и опытно-констуркторские работы, разработку технической документации и программнорго обеспечения
+                    </h3>
+                  </article>
+                </div>
+  
+              </div>
+  
+              <div class="swiper-card-3__line-nav">
+                <div class="swiper-group-btn-type-1">
+                  <button class="swiper-btn-type-1 --prev btn-reset">
+                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+                      <use xlink:href="img/sprite.svg#arrSwiperPrev"></use>
+                    </svg>
+                  </button>
+                  <button class="swiper-btn-type-1 --next btn-reset">
+                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+                      <use xlink:href="img/sprite.svg#arrSwiperNext"></use>
+                    </svg>
+                  </button>
+                </div>
+                <a class="link-light" href="#">
+                  <span class="text">
+                    Показать все
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="corporate-style">
+      <div class="container">
+        <div class="corporate-style__content">
+          <div class="corporate-style__line-title">
+            <h2 class="corporate-style__title">Фирменный стиль</h2>
+          </div>
+          <div class="corporate-style__line-content">
+            <div class="corporate-style__left">
+              <article class="card-brandbook">
+                <div class="card-brandbook__top">
+                  <h3 class="card-brandbook__title">Брендбук и фирменный стиль</h3>
+                  <p class="card-brandbook__desc">
+                    Логотип, цветовая схема и фирменный стиль имеют собственные правила представленные в документе. Воспроизведение на любых носителях возможно только при строгом соблюдении правил.
+                  </p>
+                </div>
+                <div class="card-brandbook__bottom">
+                  <a href="#" download class="link-download-brandbook">
+                    <span class="svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <circle cx="13" cy="13" r="10" fill="#00CB62"/>
+                        <path d="M13.6 8C13.6 7.66863 13.3314 7.4 13 7.4C12.6686 7.4 12.4 7.66863 12.4 8L13 8L13.6 8ZM12.5757 18.4243C12.8101 18.6586 13.1899 18.6586 13.4243 18.4243L17.2426 14.6059C17.477 14.3716 17.477 13.9917 17.2426 13.7574C17.0083 13.523 16.6284 13.523 16.3941 13.7574L13 17.1515L9.60589 13.7574C9.37157 13.523 8.99167 13.523 8.75736 13.7574C8.52304 13.9917 8.52304 14.3716 8.75736 14.6059L12.5757 18.4243ZM13 8L12.4 8L12.4 18L13 18L13.6 18L13.6 8L13 8Z" fill="white"/>
+                      </svg>
+                    </span>
+                    <span class="text">
+                      Брендбук «НЭК.ТЕХ»
+                    </span>
+                    <span class="value">
+                      (PDF 4,16 Мб)
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+  
+            <div class="corporate-style__right">
+              <article class="card-logo">
+                <div class="card-logo__top">
+                  <h3 class="card-logo__title">Скачать логотип</h3>
+                  <img src="img/logo/logo.svg" alt="logo">
+                </div>
+                <div class="card-logo__bottom">
+                  <a href="#" download class="link-download-logo">
+                    <span class="text">
+                      Скачать <b>(20 Мб)</b>
+                    </span>
+                    <span class="svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <circle cx="13" cy="13" r="10" fill="#00CB62"/>
+                        <path d="M13.6 8C13.6 7.66863 13.3314 7.4 13 7.4C12.6686 7.4 12.4 7.66863 12.4 8L13 8L13.6 8ZM12.5757 18.4243C12.8101 18.6586 13.1899 18.6586 13.4243 18.4243L17.2426 14.6059C17.477 14.3716 17.477 13.9917 17.2426 13.7574C17.0083 13.523 16.6284 13.523 16.3941 13.7574L13 17.1515L9.60589 13.7574C9.37157 13.523 8.99167 13.523 8.75736 13.7574C8.52304 13.9917 8.52304 14.3716 8.75736 14.6059L12.5757 18.4243ZM13 8L12.4 8L12.4 18L13 18L13.6 18L13.6 8L13 8Z" fill="white"/>
+                      </svg>
+                    </span>
+                  </a>
+                  <p>
+                    В архив включены все варианты начертаний и форматов изображения
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+  @@include('html/boxs/footer.html')
+  @@include('html/components/cookie.html')
+</body>
+
+</html>

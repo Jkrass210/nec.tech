@@ -1,0 +1,101 @@
+<section class="contacts mb-148">
+  <div class="container">
+    <div class="contacts__content">
+      <div class="contacts__left js-scroll-wrapper">
+        <ul class="contacts__list list-reset js-scroll-block">
+
+          <li>
+            <article class="card-contact">
+              <span class="status main-status">Головной офис</span>
+              <address class="card-contact__address">
+                <span class="city">г. Санкт-Петербург</span>
+                <span class="text">ул. Шателена, д. 26, лит. А</span>
+                <a class="phone" href="tel:+7 (812) 448-56-98">+7 (812) 448-56-98</a>
+                <span class="text">ПН -ПТ: 9.00 - 18.00</span>
+                <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+              </address>
+            </article>
+          </li>
+
+          <li>
+            <article class="card-contact">
+              <span class="status">Филиал</span>
+              <address class="card-contact__address">
+                <span class="city">г. Санкт-Петербург</span>
+                <span class="text">17-я линия ВО, д. 4-6 Е</span>
+                <a class="phone" href="tel:+7 (812) 448-56-98">+7 (812) 448-56-98</a>
+                <span class="text">ПН -ПТ: 9.00 - 18.00</span>
+                <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+              </address>
+            </article>
+          </li>
+
+          <li>
+            <article class="card-contact">
+              <span class="status">Филиал</span>
+              <address class="card-contact__address">
+                <span class="city">г. Санкт-Петербург</span>
+                <span class="text">17-я линия ВО, д. 4-6 Е</span>
+                <a class="phone" href="tel:+7 (812) 448-56-98">+7 (812) 448-56-98</a>
+                <span class="text">ПН -ПТ: 9.00 - 18.00</span>
+                <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+              </address>
+            </article>
+          </li>
+
+          <li>
+            <article class="card-contact">
+              <span class="status">Головной офис</span>
+              <address class="card-contact__address">
+                <span class="city">г. Санкт-Петербург</span>
+                <span class="text">ул. Шателена, д. 26, лит. А</span>
+                <a class="phone" href="tel:+7 (812) 448-56-98">+7 (812) 448-56-98</a>
+                <span class="text">ПН -ПТ: 9.00 - 18.00</span>
+                <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+              </address>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+      <div class="contacts__right">
+        <div class="map-contacts" id="map-contacts"></div>
+        <script>
+          ymaps.ready(init);
+          function init() {
+            const isMobile = window.innerWidth <= 1000;
+            const center = isMobile
+              ? [60.005859, 30.358736] // центр для мобилки
+              : [60.005859, 30.358736]; // центр для десктопа
+            const iconSize = isMobile
+              ? [32, 40] // меньше иконка
+              : [48, 48];
+            const iconOffset = isMobile
+              ? [-15, -40]
+              : [-10, -20];
+            const map = new ymaps.Map("map-contacts", {
+              center: center,
+              zoom: 15,
+              controls: []
+            });
+            map.behaviors.disable('scrollZoom');
+            const placemark = new ymaps.Placemark(
+              [60.005859, 30.358736],
+              {
+                hintContent: "Моя метка",
+                balloonContent: "Описание"
+              },
+              {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map/local.svg',
+                iconImageSize: iconSize,
+                iconImageOffset: iconOffset
+              }
+            );
+            map.geoObjects.add(placemark);
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</section>

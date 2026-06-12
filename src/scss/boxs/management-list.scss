@@ -1,0 +1,115 @@
+.management-list {
+  padding-bottom: 148px;
+  @media (max-width: 1200px) {
+    padding-bottom: 120px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      width: 450px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    li {
+      position: relative;
+    }
+    @media (min-width: 1201px) {
+      li:nth-child(2) {
+        position: relative;
+        &::before {
+          content: '';
+          width: 240px;
+          height: 1500px;
+  
+          position: absolute;
+          right: 50%;
+          top: 50%;
+          transform: translate(50%, -50%) rotate(90deg);
+          border-radius: 1500px;
+          opacity: 0.8;
+          background: var(--green, #00CB62);
+          filter: blur(250px);
+        }
+      }
+      li:nth-child(n+5):nth-child(3n-1) {
+        position: relative;
+        &::before {
+          content: '';
+          width: 240px;
+          height: 1500px;
+  
+          position: absolute;
+          right: 50%;
+          top: 50%;
+          transform: translate(50%, -50%) rotate(90deg);
+          border-radius: 1500px;
+          opacity: 0.8;
+          background: var(--green, #00CB62);
+          filter: blur(250px);
+        }
+      }
+    }
+    @media (min-width: 1001px) {
+      li:nth-child(2), li:nth-child(4) {
+        position: relative;
+        &::before {
+          content: '';
+          width: 240px;
+          height: 1500px;
+  
+          position: absolute;
+          right: 75%;
+          top: 50%;
+          transform: translate(50%, -50%) rotate(90deg);
+          border-radius: 1500px;
+          opacity: 0.8;
+          background: var(--green, #00CB62);
+          filter: blur(250px);
+        }
+      }
+    }
+    @media (min-width: 301px) {
+      li:not(:last-child, :first-child) {
+        position: relative;
+        &::before {
+          content: '';
+          width: 240px;
+          height: 1500px;
+  
+          position: absolute;
+          right: 50%;
+          top: 50%;
+          transform: translate(50%, -50%) rotate(90deg);
+          border-radius: 1500px;
+          opacity: 0.8;
+          background: var(--green, #00CB62);
+          filter: blur(250px);
+        }
+      }
+      li:first-child {
+        position: relative;
+        &::before {
+          content: '';
+          width: 240px;
+          height: 1500px;
+  
+          position: absolute;
+          right: 50%;
+          top: 90%;
+          transform: translate(50%, -50%) rotate(90deg);
+          border-radius: 1500px;
+          opacity: 0.8;
+          background: var(--green, #00CB62);
+          filter: blur(250px);
+        }
+      }
+    }
+  }
+}

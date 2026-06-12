@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зарецкий Дмитрий Викторович</title>
+  <link href="css/normalize.min.css?_v=20260612144946" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css?_v=20260612144946" rel="stylesheet">
+  <link href="css/style.css?_v=20260612144946" rel="stylesheet">
+
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.remove('loading');
+      document.getElementById('preloader').style.display = 'none';
+    });
+  </script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=93db7d8d-d126-4f79-9f10-621804bddd7f&lang=ru_RU&_v=20260612144946"></script>
+  
+  <script src="js/jquery-3.7.1.min.js?_v=20260612144946" defer></script>
+  <script src="js/jquery.validate.min.js?_v=20260612144946" defer></script>
+  <script src="js/jquery.inputmask.min.js?_v=20260612144946" defer></script>
+  <script src="js/swiper-bundle.min.js?_v=20260612144946" defer></script>
+  <script src="js/fslightbox.js?_v=20260612144946" defer></script>
+  <script type="module" src="js/main.js?_v=20260612144946"></script>
+</head>
+
+
+<body>
+  <div id="preloader">
+  <div class="loader"></div>
+</div>
+  <header class="header">
+  <div class="container">
+    <div class="header__line">
+      <div class="header__box-logo">
+        <a href="/" class="logo">
+  <img src="img/logo/logo.svg" alt="logo">
+</a>
+      </div>
+      <div class="header__box-nav js-menu">
+        <button class="header__nav-close btn-reset js-close">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav-list list-reset">
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Компания</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Руководство</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Лицензии и акредитации</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">РИД</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Отраслевые стандарты</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского ПО</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Партнеры</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Антикоррупционная политика</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Разработки</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">sgsg sef</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">123</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Отраслевые</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Дизайн-центр</span>
+              </a>
+            </li>
+
+            <li>
+              <div class="drop-down-type-1">
+                <div class="drop-down-type-1__trigger">
+                  <a href="#" class="drop-down-type-1__main-link">
+                    <span class="text">Технологии</span>
+                  </a>
+                  <span class="drop-down-type-1__trigger-svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <use xlink:href="img/sprite.svg#dropDownType1"></use>
+                    </svg>
+                  </span>
+                  <button class="drop-down-type-1__btn btn-reset"></button>
+                </div>
+
+                <div class="drop-down-type-1__info">
+                  <ul class="drop-down-type-1__list list-reset">
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">sgsg sef</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реестр Российского</a>
+                    </li>
+                    <li>
+                      <a href="#" class="drop-down-type-1__link">Реквизиты</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Карьера</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Пресс-центр</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="link-nav">
+                <span class="text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__box-group">
+        <a href="tel:+7 (812) 448-56-98" class="link-phone">
+          <span class="svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <use xlink:href="img/sprite.svg#linkPhone"></use>
+            </svg>
+          </span>
+          <span class="text">
+            +7 (812) 448-56-98
+          </span>
+        </a>
+
+        <button class="burger btn-reset js-burger">
+          <span class="text">Меню</span>
+          <span class="svg">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <use xlink:href="img/sprite.svg#burger"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <div class="bx-breadcrumb">
+      <div class="container">
+        <div class="bx-breadcrumb__list">
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Главная страница</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Компания</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Руководство</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <span>Зарецкий Дмитрий Викторович</span>
+          </div>
+        </div>
+        <div class="bx-breadcrumb-back">
+          <a href="#" class="bx-breadcrumb-back__link">
+            <span class="svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite.svg#breadBack"></use>
+              </svg>
+            </span>
+            <span class="text">
+              Вернуться назад
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="detail-management">
+      <div class="container">
+        <div class="detail-management__content">
+          <div class="detail-management__top">
+            <div class="page-title">
+              <div class="page-title__line">
+                <h1 class="page-title__text">
+                  Зарецкий Дмитрий Викторович
+                </h1>
+                <span class="page-title__post">Генеральный директор ООО «НЭК ТЕХ»</span>
+              </div>
+            </div>
+            <div class="static-text">
+              <p>
+                С отличием окончил физико-математический факультет Санкт-Петербургского государственного университета. Кандидат физико-математических наук. Имеет степень MBA для руководителей и сертификат PMP.
+              </p>
+            </div>
+          </div>
+          <div class="detail-management__middle">
+            <div class="detail-management__box-img">
+              <picture><source srcset="img/detail-management/1.webp" type="image/webp"><img src="img/detail-management/1.jpg" alt="img"></picture>
+            </div>
+          </div>
+          <div class="detail-management__bottom">
+            <div class="static-text">
+              <h3>Подзаголовок</h3>
+              <p>
+                С другой стороны, сплочённость команды профессионалов требует определения и уточнения существующих финансовых и административных условий. Для современного мира сложившаяся структура организации позволяет оценить значение распределения внутренних резервов и ресурсов. Безусловно, базовый вектор развития требует анализа форм воздействия.
+              </p>
+              <ul>
+                <li>
+                  Есть над чем задуматься: активно развивающиеся страны третьего мира неоднозначны и будут представлены в исключительно положительном свете.
+                </li>
+                <li>
+                  Повседневная практика показывает, что высокое качество позиционных исследований играет определяющее значение для анализа существующих паттернов поведения.
+                </li>
+                <li>
+                  Противоположная точка зрения подразумевает, что активно развивающиеся страны третьего мира неоднозначны и будут смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                </li>
+              </ul>
+              <p>
+                Банальные, но неопровержимые выводы, а также стремящиеся вытеснить традиционное производство, нанотехнологии могут быть разоблачены. В своём стремлении улучшить пользовательский опыт мы упускаем, что диаграммы связей формируют глобальную экономическую сеть и при этом —  представлены в исключительно положительном свете. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня способствует повышению качества как самодостаточных, так и внешне зависимых концептуальных решений.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer mt-148">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__top">
+        <a href="/" class="logo-footer">
+  <img src="img/logo/logo-footer.svg" alt="logo">
+</a>
+        <ul class="footer__nav list-reset">
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">О компании</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Разработки</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Дизайн-центр</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Технологии</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Карьера</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Пресс-центр</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-nav">
+              <span class="text">Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div class="contacts-line">
+          <div class="box-info">
+            <span class="name">Адрес:</span>
+            <span class="text">г. Санкт-Петербург, ул. Шателена, д. 26, лит. А</span>
+          </div>
+          <div class="box-info">
+            <span class="name">Телефон:</span>
+            <a href="tel:+7 (812) 448-56-98" class="phone">+7 (812) 448-56-98</a>
+          </div>
+          <div class="box-info">
+            <span class="name">Эл. адрес:</span>
+            <a href="mailto:info@nectech.pro" class="mailto">info@nectech.pro</a>
+          </div>
+        </div>
+        <div class="network-line">
+          <span class="name">Мы в соц. сетях</span>
+          <ul class="network-list list-reset">
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Телеграм НЭК.ТЕХ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Телеграм НЭК</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Дзен</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="link-network">
+                <span class="text">Хабр</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ending-line">
+          <div class="ending-line__group">
+            <p><span>© 2026</span>Все права защищены</p>
+            <a href="#">Политика обработки персональных данных</a>
+          </div>
+          <a class="link-x2" href="https://x2digital.ru/">
+            <span class="text">Разработка сайта</span>
+            <img src="img/x2/x2.svg" alt="x2">
+          </a>
+        </div>
+      </div>
+      <div class="footer-bg"></div>
+    </div>
+    <span class="cue">
+      Энергия<br>
+      общей<br>
+      цели<br>
+    </span>
+  </div>
+</footer>
+
+<div class="modal" id="viewer-video">
+  <div class="modal__body">
+    <button class="viewer-video__close modal__close btn-reset js-close-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M0.601562 0.599976L12.2682 12.2666M0.601562 12.2666L12.2682 0.599976" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="viewer-video__window js-box-video-iframe">
+      <iframe src="" width="100%" height="100%" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="success-message">
+  <div class="modal__body">
+    <button class="success-message__close modal__close btn-reset js-close-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+        <path d="M0.601562 0.599976L12.2682 12.2666M0.601562 12.2666L12.2682 0.599976" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="success-message__window">
+      <h3 class="success-message__title">
+        Спасибо за ваше сообщение!
+      </h3>
+      <p class="success-message__text">
+        Мы получили ваше сообщение и свяжемся с вами в ближайшее время.
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="cookie">
+  <div class="container cookie__container">
+    <div class="cookie__window">
+      <div class="cookie__message">
+        <p class="desc">
+          Оставаясь на сайте вы соглашаетесь с <a href="#">Политикой обработки персональных</a> данных и с использованием cookie.
+        </p>
+      </div>
+      <div class="cookie__box-btn">
+        <button class="cookie__btn btn-reset">
+          <span class="text">Понятно</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

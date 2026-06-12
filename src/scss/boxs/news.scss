@@ -8,6 +8,15 @@
       gap: 20px;
     }
   }
+  &__main-content {
+    .news__box-swiper {
+      display: none;
+      &.active {
+        display: block;
+        animation: fadeIn 0.4s ease-in-out;
+      }
+    }
+  }
   .link-light {
     color: var(--white, #FFF);
     background-color: var(--gray-500, #232323);

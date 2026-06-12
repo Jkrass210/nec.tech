@@ -1,0 +1,12 @@
+.box-press {
+  &__line {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .link-light {
+      color: var(--white, #FFF);
+      background-color: var(--gray-500, #232323);
+    }
+  }
+}

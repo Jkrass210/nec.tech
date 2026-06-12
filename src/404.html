@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"404"})
+<body>
+  @@include('html/boxs/preloader.html')
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <div class="page-error">
+      <div class="page-error__img">
+        <picture>
+          <source srcset="img/404/404-1000.svg" media="(max-width: 1000px)">
+          <img src="img/404/404.svg" alt="404">
+        </picture>
+      </div>
+      <div class="page-error__content">
+        <p>Страница, которую Вы ищите потерялась или её больше нет, или Вы ошиблись адресом, и мы искренне грустим вместе с Вами :(</p>
+        <div>
+          <p>Не огорчайтесь!</p>
+          <p>Посмотрите <a href="#">наши разработки</a> или <a href="">интересные вакансии</a>!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('html/boxs/footer.html')
+  @@include('html/components/cookie.html')
+</body>
+</html>

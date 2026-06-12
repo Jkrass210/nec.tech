@@ -1,0 +1,101 @@
+.detail-management {
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-right: calc(462 / 1364 * 100%);
+    min-height: 572px;
+    @media (max-width: 1200px) {
+      padding-right: calc(348 / 976 * 100%);
+      gap: 28px;
+      min-height: 400px;
+    }
+    @media (max-width: 1000px) {
+      gap: 24px;
+      min-height: auto;
+      padding-right: 0;
+    }
+  }
+  &__top {
+    .page-title {
+      &__line {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        @media (max-width: 1200px) {
+          gap: 8px;
+        }
+      }
+      &__post {
+        color: var(--green, #00CB62);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%;
+        @media (max-width: 1200px) {
+          font-size: 18px;
+        }
+        @media (max-width: 1000px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &__middle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(438 / 1364 * 100%);
+    @media (max-width: 1200px) {
+      width: calc(324 / 976 * 100%);
+    }
+    @media (max-width: 1000px) {
+      position: static;
+      width: 450px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__box-img {
+    position: sticky;
+    top: 120px;
+    width: 100%;
+    height: 572px;
+    min-height: 572px;
+    max-height: 572px;
+    overflow: hidden;
+    border-radius: 24px;
+    @media (max-width: 1200px) {
+      top: 110px;
+      height: 400px;
+      min-height: 400px;
+      max-height: 400px;
+    }
+    @media (max-width: 1000px) {
+      position: static;
+      height: 328px;
+      min-height: 328px;
+      max-height: 328px;
+    }
+    img {
+      pointer-events: none;
+      width: 100%;
+      height: 572px;
+      min-height: 572px;
+      max-height: 572px;
+      object-fit: cover;
+      @media (max-width: 1200px) {
+        height: 400px;
+        min-height: 400px;
+        max-height: 400px;
+      }
+      @media (max-width: 1000px) {
+        height: 328px;
+        min-height: 328px;
+        max-height: 328px;
+      }
+    }
+  }
+}

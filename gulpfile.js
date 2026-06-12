@@ -28,7 +28,13 @@ import { video } from './gulp/tasks/video.js';
 
 function watcher() {
   gulp.watch(path.watch.html, html)
-  gulp.watch(path.watch.scss, scss)
+  gulp.watch(
+    path.watch.scss,
+    gulp.series(scss, (done) => {
+      plugins.browsersync.reload()
+      done()
+    })
+  )
   gulp.watch(path.watch.jsModules, jsModules)
   gulp.watch(path.watch.js, js)
   gulp.watch(path.watch.images, images)

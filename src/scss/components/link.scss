@@ -171,4 +171,303 @@
       }
     }
   }
+  &-download {
+    padding: 24px;
+    width: 264px;
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+    background-color: var(--black, #141414);
+    border-radius: 24px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    @media (max-width: 1000px) {
+      padding: 16px;
+      width: 100%;
+    }
+    &:focus-visible,&:focus {
+      outline: none;
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        background-color: var(--green);
+        .svg {
+          background-color: var(--black);
+        }
+      }
+    }
+    .text {
+      b {
+        color: var(--gray-200, #646464);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+    .svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      color: var(--white, #FFF);
+      background-color: var(--green, #00CB62);
+      transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    }
+  }
+  &-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--white, #FFF);
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.44px;
+    transition: color 0.4s ease-in-out;
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible, &:hover {
+        color: var(--green);
+      }
+    }
+    @media (max-width: 1000px) {
+      font-size: 17px;
+    }
+    &::after {
+      content: '';
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      background-image: url("../img/link-media/arr.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  &-download-map {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 52px;
+    min-width: 248px;
+    padding: 5px 20px;
+    border-radius: 14px;
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 141.176%;
+    border: 2px solid var(--gray-500, #232323);
+    overflow: hidden; // Добавлено для отображения псевдоэлемента внутри кнопки
+    background-image: url("../img/link-download-map/bg.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    transition: background-color 0.4s ease-in-out;
+    @media (max-width: 1200px) {
+      height: 44px;
+      min-width: 252px;
+      font-size: 16px;
+    }
+    @media (max-width: 1000px) {
+      height: 48px;
+      min-width: auto;
+      width: 100%;
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible, &:hover {
+        background-color: var(--green);
+        .svg {
+          color: var(--white);
+        }
+      }
+    }
+    .text {
+      b {
+        font-weight: 400;
+      }
+    }
+    .svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      color: var(--green, #00CB62);
+      transition: color 0.4s ease-in-out;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: -97.606px;
+      top: -96.886px;
+      width: 125.001px;
+      height: 232px;
+      background: var(--green, #00CB62);
+      opacity: 0.2;
+      filter: blur(50px);
+      transform: rotate(56.617deg);
+      z-index: 0; // Убедитесь, что этот элемент не перекрывает контент
+      pointer-events: none;
+      @media (max-width: 1200px) {
+        left: -134.606px;
+        top: -96.886px;
+      }
+    }
+    // Поднимем основной контент выше псевдоэлемента
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &-download-brandbook {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    padding-left: 32px;
+    .svg {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text {
+      color: var(--green, #00CB62);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 133.333%;
+      text-decoration: underline;
+      @media (max-width: 1000px) {
+        font-size: 15px;
+      }
+    }
+    .value {
+      color: var(--gray-400, #908F8F);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @media (max-width: 1000px) {
+        font-size: 12px;
+      }
+    }
+  }
+  &-download-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    gap: 6px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 14px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: var(--gray-500, #232323);
+    transition: background-color 0.4s ease-in-out;
+    @media (min-width: 1001px) {
+      &:focus-visible, &:hover {
+        background-color: var(--green);
+      }
+    }
+    .text {
+      b {
+        font-weight: 400;
+      }
+    }
+    .svg {
+      display: flex;
+    }
+  }
+  &-show {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 28px;
+    height: 52px;
+    border-radius: 1000px;
+    color: var(--black, #141414);
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    background-color: var(--white);
+    .svg {
+      display: flex;
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        background-color: var(--gray-50);
+        border-color: var(--black, #141414);
+      }
+    }
+  }
+  &-download-product-info {
+    display: flex;
+    gap: 6px;
+    align-items: start;
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    .svg {
+      display: flex;
+      color: var(--green, #00CB62);
+      transition: color 0.4s ease-in-out;
+    }
+    .size {
+      color: var(--gray-200, #646464);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      @media (max-width: 1200px) {
+        font-size: 18px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 16px;
+      }
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        .svg {
+          color: var(--white);
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 16px;
+    }
+  }
 }

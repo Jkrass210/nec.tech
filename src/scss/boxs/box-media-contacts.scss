@@ -1,0 +1,96 @@
+.box-media-contacts {
+  .container {
+    position: relative;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 74px;
+    padding: 42px 44px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--gray-700, #1D1D1D);
+    @media (max-width: 1200px) {
+      padding: 28px;
+      gap: 20px;
+    }
+    @media (max-width: 1000px) {
+      padding: 24px;
+      flex-direction: column;
+      gap: 26px;
+    }
+  }
+  &__top {
+    width: calc(626 / 1276 * 100%);
+    @media (max-width: 1200px) {
+      width: calc(450 / 920 * 100%);
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 16px;
+    color: var(--white, #FFF);
+    font-family: var(--font-family);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.64px;
+    @media (max-width: 1200px) {
+      font-size: 26px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 24px;
+    }
+  }
+  &__desc {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.4px;
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  &__bottom {
+    position: relative;
+    z-index: 1;
+    padding: 34px 32px 34px 36px;
+    flex: 1;
+    min-height: 162px;
+    border-radius: 20px;
+    background-color: rgba(19, 19, 19, 0.60);
+    backdrop-filter: blur(28.304000854492188px);
+    @media (max-width: 1200px) {
+      padding: 20px;
+      min-height: 157px;
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+      padding: 18px 16px;
+    }
+  }
+  &__grop-links {
+    position: absolute;
+    bottom: calc(100% + 33px);
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 1200px) {
+      bottom: calc(100% + 25px);
+    }
+    @media (max-width: 1000px) {
+      position: static;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+  }
+}

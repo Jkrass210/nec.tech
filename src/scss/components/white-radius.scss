@@ -1,0 +1,23 @@
+.white-radius {
+  padding-bottom: 100px;
+  position: relative;
+  border-radius: 0 0 28px 28px;
+  background-color: var(--black, #141414);
+  @media (max-width: 1200px) {
+    padding-bottom: 76px;
+  }
+  @media (max-width: 1000px) {
+    padding-bottom: 44px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    z-index: -1;
+    background-color: #F5F5F5;
+    pointer-events: none;
+  }
+}

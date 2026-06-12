@@ -1,0 +1,22 @@
+.bg-transperent-pb-148 {
+  position: relative;
+  background-color: transparent;
+  padding-bottom: 118px;
+  @media (max-width: 1200px) {
+    padding-bottom: 90px;
+  }
+  @media (max-width: 1000px) {
+    padding-bottom: 78px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 30px;
+    border-radius: 0 0 28px 28px;
+    z-index: 2;
+    background-color: var(--black, #141414);
+  }
+}

@@ -1,0 +1,14 @@
+.hidden-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__content {
+    display: none;
+    flex-direction: column;
+    gap: 52px;
+  }
+  &.active &__content {
+    display: flex;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+}

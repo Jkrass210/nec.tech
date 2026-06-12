@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"О компании"})
+
+<body>
+  @@include('html/boxs/preloader.html')
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <div class="bx-breadcrumb">
+      <div class="container">
+        <div class="bx-breadcrumb__list">
+          <div class="bx-breadcrumb-item">
+            <a href="/">
+              <span>Главная страница</span>
+            </a>
+          </div>
+          <div class="bx-breadcrumb-item">
+            <span>О компании</span>
+          </div>
+        </div>
+        <div class="bx-breadcrumb-back">
+          <a href="#" class="bx-breadcrumb-back__link">
+            <span class="svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite.svg#breadBack"></use>
+              </svg>
+            </span>
+            <span class="text">
+              Вернуться назад
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-title">
+      <div class="container">
+        <div class="page-title__line">
+          <h1 class="page-title__text">
+            О компании
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    @@include('html/boxs/about-hero.html')
+
+    @@include('html/boxs/about-content.html')
+
+    <section class="box-banner-video mt-178 pb-148 white-radius">
+      <div class="container">
+        <div class="box-banner-video__content">
+          <div class="box-banner-video__banner js-banner-video" data-video="https://vkvideo.ru/video_ext.php?oid=-121445927&id=456249083&hash=4946f17bc50d7c93&hd=3">
+            <!-- видео грузится когда блок на экране -->
+            <!-- <img src="img/about-hero/1.jpg" alt="img"> если изображение -->
+            <!-- <iframe src="https://vkvideo.ru/video_ext.php?oid=-121445927&id=456249083&hash=4946f17bc50d7c93&hd=3" width="1280" height="720" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback white pt-148 pb-234">
+      <div class="container">
+        <div class="feedback__content">
+          <div class="feedback__left">
+            <div class="form-type-1">
+              <form class="js-form" action="#" method="post">
+                <div class="form-type-1__wrapper">
+                  <h3 class="form-type-1__title">Есть вопросы? Напишите!</h3>
+                  <div class="form-type-1__group-input">
+                    <label class="input-type-1">
+                      <input class="input-type-1__input required" type="text" placeholder="Ваше имя">
+                      <span class="error-message">Это поле не может быть пустым</span>
+                    </label>
+                    <label class="input-type-1">
+                      <input class="input-type-1__input js-phone-mask required required-phone" type="text" placeholder="Ваше номер">
+                      <span class="error-message">Это поле не может быть пустым</span>
+                    </label>
+                    <label class="textarea-type-1">
+                      <textarea class="textarea-type-1__text" placeholder="Ваше сообщение"></textarea>
+                      <span class="error-message">Это поле не может быть пустым</span>
+                    </label>
+                  </div>
+                  <div class="form-type-1__group-submit">
+                    <button class="btn-submit btn-reset" type="submit">
+                      <span class="text">
+                        Отправить сообщение
+                      </span>
+                    </button>
+                  </div>
+                  <div class="form-type-1__group-checkbox">
+                    <label class="checkbox-type-1">
+                      <input class="checkbox-type-1__input required-checkbox required" checked type="checkbox">
+                      <span class="custom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                          <path d="M9.69922 0.700195L3.39922 8.2002L0.699219 5.2002" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span class="checkbox-type-1__text">
+                        Нажимая отправить вы даёте согласие с <a href="#">политикой обработки</a> <a href="#">персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="feedback__right">
+            <div class="feedback__img">
+              <img src="img/feedback/1.jpg" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  @@include('html/boxs/footer.html')
+  @@include('html/components/cookie.html')
+</body>
+
+</html>

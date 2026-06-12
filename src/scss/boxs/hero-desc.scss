@@ -1,0 +1,70 @@
+.hero-desc {
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 48px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--black-light, #191919);
+    @media (max-width: 1200px) {
+      padding: 36px;
+    }
+    @media (max-width: 1000px) {
+      padding: 24px;
+      flex-direction: column;
+    }
+  }
+  &__top {
+    position: relative;
+    z-index: 1;
+    width: calc(622 / 1268 * 100%);
+    @media (max-width: 1200px) {
+      width: calc(430 / 904 * 100%);
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+  &__bottom {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+  }
+  &__box-img {
+    pointer-events: none;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 100%;
+    height: 416px;
+    max-height: 416px;
+    min-height: 416px;
+    @media (max-width: 1200px) {
+      height: 408px;
+      max-height: 408px;
+      min-height: 408px;
+    }
+    @media (max-width: 1000px) {
+      height: 252px;
+      max-height: 252px;
+      min-height: 252px;
+    }
+    img {
+      border-radius: 24px;
+      width: 100%;
+      height: 416px;
+      max-height: 416px;
+      min-height: 416px;
+      object-fit: cover;
+      @media (max-width: 1200px) {
+        height: 408px;
+        max-height: 408px;
+        min-height: 408px;
+      }
+      @media (max-width: 1000px) {
+        height: 252px;
+        max-height: 252px;
+        min-height: 252px;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.btn {
+  &-read-completely {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 28px;
+    color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    border-radius: 20px;
+    background-color: var(--gray-700, #1D1D1D);
+    .text-active {
+      display: none;
+    }
+    svg {
+      transition: transform 0.4s ease-in-out;
+    }
+    &.active {
+      .text-active {
+        display: inline-block;
+      }
+      .text {
+        display: none;
+      }
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+    .svg {
+      display: flex;
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        background-color: var(--green);
+      }
+    }
+    @media (max-width: 1000px) {
+      height: 56px;
+      font-size: 16px;
+    }
+  }
+  &-consultation {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    padding: 8px 44px;
+    border-radius: 16px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: var(--green, #00CB62);
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        background-color: var(--green-hover);
+      }
+    }
+    @media (max-width: 1200px) {
+      height: 52px;
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+  &-submit {
+    width: 328px;
+    max-width: 100%;
+    height: 64px;
+    padding: 5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;color: var(--white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%;
+    background-color: var(--green, #00CB62);
+    @media (min-width: 1001px) {
+      &:focus-visible,&:hover {
+        background-color: var(--green-hover);
+      }
+    }
+    @media (max-width: 1200px) {
+      height: 56px;
+      width: 100%;
+    }
+    @media (max-width: 1000px) {
+      height: 52px;
+      font-size: 16px;
+    }
+  }
+}

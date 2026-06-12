@@ -1,0 +1,9 @@
+.similar-solutions {
+  border-radius: 0 0 28px 28px;
+  &::after {
+    display: none !important;
+  }
+  &__box-swiper {
+    margin-top: 30px;
+  }
+}

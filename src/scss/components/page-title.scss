@@ -1,0 +1,43 @@
+.page-title {
+  margin-bottom: 32px;
+  @media (max-width: 1200px) {
+    margin-bottom: 28px;
+  }
+  @media (max-width: 1000px) {
+    margin-bottom: 24px;
+  }
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &__text {
+    color: var(--white, #FFF);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    @media (max-width: 1200px) {
+      font-size: 32px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 28px;
+    }
+  }
+}
+
+body:has(.box-media-contacts) {
+  .page-title {
+    &__line {
+      padding-right: 600px;
+      @media (max-width: 1200px) {
+        padding-right: 550px;
+      }
+      @media (max-width: 1000px) {
+        padding-right: 0;
+      }
+    }
+  }
+}

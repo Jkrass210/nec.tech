@@ -1,0 +1,40 @@
+.hero-desc-bg {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    inset: 0;
+    background-image: url('../img/hero-desc-bg/bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 1000px) {
+      background-image: url('../img/hero-desc-bg/bg-1000.svg');
+    }
+  }
+  &::after {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    right: -118px;
+    top: -222px;
+    z-index: 0;
+    width: 393.447px;
+    height: 586.034px;
+    transform: rotate(135.45deg);
+    border-radius: 586.034px;
+    background: var(--green, #00CB62);
+    filter: blur(325px);
+    @media (max-width: 1000px) {
+      width: 257.969px;
+      height: 384.241px;
+      transform: rotate(135.45deg);
+      border-radius: 384.241px;
+      right: -106px;
+      top: auto;
+      bottom: -16px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.drop-down-filter-1 {
+  position: relative;
+  &__btn {
+    min-width: 140px;
+    height: 56px;
+    padding: 5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 19px;
+    border-radius: 16px;
+    color: var(--white, #FFF);
+    border: 1px solid transparent;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 141.176%;
+    background: var(--gray-500, #232323);
+    transition: background-color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+    
+    svg {
+      transition: transform 0.4s ease-in-out;
+    }
+    .svg {
+      display: flex;
+    }
+    &.active {
+      border-radius: 16px 16px 0 0;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,
+      &:hover {
+        background-color: var(--gray-200, #646464);
+      }
+    }
+    @media (max-width: 1200px) {
+      height: 52px;
+      font-size: 16px;
+    }
+    @media (max-width: 1000px) {
+      min-width: 164px;
+      height: 48px;
+      font-size: 15px;
+    }
+  }
+
+  &__box {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background-color: var(--gray-500, #232323);
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+    max-height: 224px;
+    overflow-y: auto;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(245, 245, 245, 0.12);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--green);
+    }
+  }
+  &__link {
+    padding: 5px 16px;
+    min-height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--white, #FFF);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 141.176%;
+    transition: background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    
+    &.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    @media (min-width: 1001px) {
+      &:focus-visible,
+      &:hover {
+        background-color: var(--gray-200, #646464);
+      }
+    }
+    @media (max-width: 1200px) {
+      min-height: 52px;
+      font-size: 16px;
+    }
+    @media (max-width: 1000px) {
+      height: 48px;
+      font-size: 15px;
+    }
+  }
+}

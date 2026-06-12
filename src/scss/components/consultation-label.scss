@@ -1,0 +1,65 @@
+.consultation-label {
+  position: relative;
+  overflow: hidden;
+  min-height: 116px;
+  padding: 32px;
+  border-radius: 24px;
+  background-color: var(--black-light, #191919);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  @media (max-width: 1000px) {
+    padding: 24px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  &::before {
+    pointer-events: none;
+    content: '';
+    width: 132px;
+    height: 513px;
+    position: absolute;
+    right: 89px;
+    top: -199px;
+    z-index: 0;
+    border-radius: 513px;
+    opacity: 0.8;
+    background: var(--green, #00CB62);
+    filter: blur(150px);
+    @media (max-width: 1000px) {
+      width: 113px;
+      height: 440px;
+      right: 4px;
+      top: -149px;
+      border-radius: 440px;
+    }
+  }
+  &::after {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url('../img/consultation-label/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 1200px) {
+      background-image: url('../img/consultation-label/bg1200.svg');
+    }
+    @media (max-width: 1000px) {
+      background-image: url('../img/consultation-label/bg1000.svg');
+    }
+  }
+  &__desc {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
+}
